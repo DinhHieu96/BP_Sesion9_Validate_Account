@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidateAccount(str) {
+        regexp=/^[_a-z0-9]{6,}$/;
+        if (regexp.test(str)){
+            alert("String's Accoint is invalid");
+        } else {
+            alert("String's Account is not invalid")
+        }
+    };
+    isValidateAccount('123_abc');
+    isValidateAccount('_abc123');
+    isValidateAccount('.@');
+    isValidateAccount('1234_');
+</script>
+</body>
+</html>
